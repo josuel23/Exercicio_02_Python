@@ -1,4 +1,5 @@
-# A associação entre classes ocorre quando uma classe possui atributos que são objetos de outra classe. De acordo com esse conceito, observe o diagrama de classes abaixo, que representa uma associação onde uma Pessoa possui um Carro.
+# A associação entre classes ocorre quando uma classe possui atributos que são objetos de outra classe. De acordo com esse conceito,
+observe o diagrama de classes abaixo, que representa uma associação onde uma Pessoa possui um Carro.
 
 |------------|                |-------------|
 | Pessoa     |                | Carro       |
