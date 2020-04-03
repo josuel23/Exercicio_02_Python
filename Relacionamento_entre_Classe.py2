@@ -1,0 +1,38 @@
+# A associação entre classes ocorre quando uma classe possui atributos que são objetos de outra classe. De acordo com esse conceito, observe o diagrama de classes abaixo, que representa uma associação onde uma Pessoa possui um Carro.
+
+|------------|                |-------------|
+| Pessoa     |                | Carro       |
+|------------|                |-------------|
+| nome:str   |1              1| marca: str  |
+| idade:int  |----------------| modelo: str |
+|carro:None  |                | placa: str  | 
+|------------|                | ano: int    |            
+| comprar_carro (carro)       
+         
+                    
+                       
+
+
+class Pessoa:
+    def __init__(self, nome, idade):
+        self.nome = nome
+        self.idade = idade
+        self.carro = None
+
+    def comprar_carro(self, carro):
+        self.carro = carro
+
+class Carro:
+    def __init__(self, marca, modelo, placa, ano):
+        self.marca = marca
+        self.modelo = modelo
+        self.placa = placa
+        self.ano = ano
+
+meucarro = Carro('Hiunday', 'HB20', 'ABC-1234', 2020)
+eu = Pessoa ('Josuel', 46)
+eu.comprar_carro(meucarro)
+print('Meu nome:', eu.nome)
+print('Modelo do meu carro:', eu.carro.modelo)
+print('Placa do meu carro:', eu.carro.placa)
+print('O ano do meu carro é:', eu.carro.ano)
