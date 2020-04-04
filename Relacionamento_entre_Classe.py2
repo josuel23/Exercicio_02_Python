@@ -18,7 +18,7 @@ class Pessoa:
     def __init__(self, nome, idade):
         self.nome = nome
         self.idade = idade
-        self.carro = None
+        self.carro = Carro.modelo
 
     def comprar_carro(self, carro):
         self.carro = carro
