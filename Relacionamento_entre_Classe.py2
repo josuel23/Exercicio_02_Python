@@ -6,7 +6,7 @@ observe o diagrama de classes abaixo, que representa uma associação onde uma P
 |------------|                |-------------|
 | nome:str   |1              1| marca: str  |
 | idade:int  |----------------| modelo: str |
-|carro:None  |                | placa: str  | 
+|carro:Carro |                | placa: str  | 
 |------------|                | ano: int    |            
 | comprar_carro (carro)       
          
